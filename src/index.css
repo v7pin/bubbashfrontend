@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --font-head: "Outfit", sans-serif;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+/* Add this in global CSS if needed */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #a78bfa; /* Tailwind purple-400 */
+  border-radius: 10px;
+}
+
+@keyframes frostFade {
+  0% {
+    opacity: 0;
+    transform: scale(1.05);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes snowflakeBounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-4px);
+  }
+}
+
+.animate-frost-fade {
+  animation: frostFade 0.5s ease-in-out forwards;
+}
+
+.animate-snowflake-bounce {
+  animation: snowflakeBounce 2s infinite ease-in-out;
+}

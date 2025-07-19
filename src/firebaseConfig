@@ -1,0 +1,19 @@
+// src/firebaseConfig.js
+import { initializeApp } from "firebase/app";
+import { getFirestore } from "firebase/firestore";
+
+// 🔐 Replace with your actual Firebase project config
+const firebaseConfig = {
+  apiKey: "AIzaSyA6ZlfuE8S1fOsa8Bl0PvQdoDhmaYGcU4g",
+  authDomain: "bubblemoney-6b1d4.firebaseapp.com",
+  projectId: "bubblemoney-6b1d4",
+  storageBucket: "bubblemoney-6b1d4.firebasestorage.app",
+  messagingSenderId: "319131763402",
+  appId: "1:319131763402:web:40bb837500d24096282a33",
+  measurementId: "G-5N2EWP6EXB",
+};
+
+const app = initializeApp(firebaseConfig);
+const db = getFirestore(app);
+
+export { db };

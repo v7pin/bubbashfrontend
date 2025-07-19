@@ -1,0 +1,74 @@
+.animated-fill-btn {
+  position: relative;
+  overflow: hidden;
+  background-color: transparent;
+  border: 2px solid #9333ea; /* Purple-600 */
+  z-index: 0;
+  transition: color 0.3s ease-in-out;
+}
+
+.animated-fill-btn::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0%;
+  height: 100%;
+  background-color: #9333ea;
+  z-index: -1;
+  transition: width 0.4s ease-in-out;
+}
+
+.animated-fill-btn:hover::before {
+  width: 100%;
+}
+
+.animated-outline-btn {
+  position: relative;
+  overflow: hidden;
+  background-color: transparent;
+  border: 2px solid #c084fc; /* Purple-300 */
+  z-index: 0;
+  transition: color 0.3s ease-in-out;
+}
+
+.animated-outline-btn::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0%;
+  height: 100%;
+  background-color: #f3e8ff; /* Light purple */
+  z-index: -1;
+  transition: width 0.4s ease-in-out;
+}
+
+.animated-outline-btn:hover::before {
+  width: 100%;
+}
+
+.animated-dark-btn {
+  position: relative;
+  overflow: hidden;
+  background-color: transparent;
+  border: 2px solid #6b21a8; /* Purple-800 */
+  z-index: 0;
+  transition: color 0.3s ease-in-out;
+}
+
+.animated-dark-btn::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0%;
+  height: 100%;
+  background-color: #6b21a8;
+  z-index: -1;
+  transition: width 0.4s ease-in-out;
+}
+
+.animated-dark-btn:hover::before {
+  width: 100%;
+}
