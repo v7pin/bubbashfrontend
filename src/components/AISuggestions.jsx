@@ -81,7 +81,7 @@ export default function AISuggestions() {
     const fetchAISuggestion = async () => {
       try {
         const res = await axios.post(
-          "https://bubbash-backend.vercel.app//api/get-suggestions",
+          "https://bubbash-backend.vercel.app/api/get-suggestions",
           {
             bubbles: enrichedBubbles,
           }
